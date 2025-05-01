@@ -11,7 +11,6 @@ public class Game {
     private List<Card> discardPile;
     private UnoLogic logic;
 
-    // Starts a new game
     public Game(String name) {
         deck = new Deck();
         user = new User(name, deck.drawCards(7));
@@ -21,11 +20,10 @@ public class Game {
         logic = new UnoLogic();
     }
 
-    // Monitors the game statements
     public void showState() {
-        System.out.println("User hand: " + user.getHand() + "\n");
-        System.out.println("Computer hand: " + computer.getHand() + "\n");
-        System.out.println("Top discard: " + discardPile.get(discardPile.size() - 1) + "\n");
+        System.out.println("User hand: " + user.getHand());
+        System.out.println("Computer hand: " + computer.getHand());
+        System.out.println("Top discard: " + discardPile.get(discardPile.size() - 1));
         System.out.println("Remaining in deck: " + deck.size() + "\n");
     }
 
@@ -34,20 +32,20 @@ public class Game {
 
         while (!user.getHand().isEmpty() && !computer.getHand().isEmpty()) {
             showState();
+            boolean skip = false;
+
             if (userTurn) {
                 System.out.println(name + "'s turn");
-                boolean skip = userTurn();
-                if (skip) {
-                    userTurn = !userTurn; // mantém para pular a vez do adversário
-                }
+                skip = userTurn();
             } else {
                 System.out.println("Computer's turn");
-                boolean skip = computerTurn();
-                if (skip) {
-                    userTurn = !userTurn; // mantém para pular a vez do adversário
-                }
+                skip = computerTurn();
             }
-            userTurn = !userTurn;
+
+            // Só troca a vez se não houve skip
+            if (!skip) {
+                userTurn = !userTurn;
+            }
         }
 
         if (user.getHand().isEmpty()) {
@@ -59,97 +57,99 @@ public class Game {
 
     public boolean userTurn() {
         List<Card> hand = user.getHand();
-        Card card1 = discardPile.get(discardPile.size() - 1);
+        Card topCard = discardPile.get(discardPile.size() - 1);
 
         boolean hasPlayable = false;
-        for (Card card2 : hand) {
-            if (logic.canPlay(user, computer, card1, card2)) {
+        for (Card card : hand) {
+            if (logic.canPlay(topCard, card, user)) {
                 hasPlayable = true;
                 break;
             }
         }
 
         if (!hasPlayable) {
-            Card drawnCard = deck.drawCard();
-            System.out.println("No playable card. You draw: " + drawnCard);
-            hand.add(drawnCard);
+            Card drawn = deck.drawCard();
+            System.out.println("No playable card. You drew: " + drawn);
+            hand.add(drawn);
             return false;
         }
 
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("Your hand:");
             for (int i = 0; i < hand.size(); i++) {
                 System.out.println((i + 1) + " - " + hand.get(i));
             }
-
             System.out.print("Choose a card to play: ");
             int choice = sc.nextInt();
 
             if (choice > 0 && choice <= hand.size()) {
-                Card card2 = hand.get(choice - 1);
-                if (logic.canPlay(user, computer, card1, card2)) {
-                    System.out.println("You played: " + card2);
-                    hand.remove(card2);
-                    discardPile.add(card2);
-                    return applyCardEffect(card2, computer); // aplica efeito no adversário
+                Card selected = hand.get(choice - 1);
+                if (logic.canPlay(topCard, selected, user)) {
+                    System.out.println("You played: " + selected);
+                    hand.remove(selected);
+                    discardPile.add(selected);
+                    return applyCardEffect(selected, computer);
                 } else {
-                    System.out.println("You cannot play that card. Try again.");
+                    System.out.println("Invalid card. Try again.");
                 }
             } else {
-                System.out.println("Invalid choice. Try again.");
+                System.out.println("Invalid choice.");
             }
-            sc.close();
-        } 
+        }
     }
 
     public boolean computerTurn() {
         List<Card> hand = computer.getHand();
-        Card card1 = discardPile.get(discardPile.size() - 1);
+        Card topCard = discardPile.get(discardPile.size() - 1);
 
-        for (Card card2 : hand) {
-            if (logic.canPlay(user, computer, card1, card2)) {
-                System.out.println("Computer played: " + card2);
-                hand.remove(card2);
-                discardPile.add(card2);
-                return applyCardEffect(card2, user); // aplica efeito no adversário
+        for (Card card : hand) {
+            if (logic.canPlay(topCard, card, computer)) {
+                System.out.println("Computer played: " + card);
+                hand.remove(card);
+                discardPile.add(card);
+                return applyCardEffect(card, user);
             }
         }
 
-        Card drawnCard = deck.drawCard();
-        System.out.println("Computer draws a card.");
-        hand.add(drawnCard);
+        Card drawn = deck.drawCard();
+        System.out.println("Computer draws a card: " + drawn);
+        hand.add(drawn);
 
-        if (logic.canPlay(user, computer, card1, drawnCard)) {
-            System.out.println("Computer played drawn card: " + drawnCard);
-            hand.remove(drawnCard);
-            discardPile.add(drawnCard);
-            return applyCardEffect(drawnCard, user);
-        } else {
-            System.out.println("Computer could not play any card.");
-            return false;
+        if (logic.canPlay(topCard, drawn, computer)) {
+            System.out.println("Computer played drawn card: " + drawn);
+            hand.remove(drawn);
+            discardPile.add(drawn);
+            return applyCardEffect(drawn, user);
         }
+
+        System.out.println("Computer cannot play.");
+        return false;
     }
 
-    //DRAW_TWO, DRAW_FOUR, SKIP
     private boolean applyCardEffect(Card card, Player opponent) {
-        Simbol simbol = card.getSimbol();
+        Symbol sym = card.getSymbol();
 
-        if (logic.drawTwo(simbol)) {
-            System.out.println(opponent.getName() + " draws 2 cards and skips turn!");
+        if (logic.drawTwo(sym)) {
+            System.out.println(opponent.getName() + " draws 2 cards and loses turn.");
             opponent.getHand().addAll(deck.drawCards(2));
-            return true; // pular próxima jogada
-        } else if (logic.drawFour(simbol)) {
-            System.out.println(opponent.getName() + " draws 4 cards and skips turn!");
+            return true;
+        }
+
+        if (logic.drawFour(sym)) {
+            System.out.println(opponent.getName() + " draws 4 cards and loses turn.");
             opponent.getHand().addAll(deck.drawCards(4));
             return true;
-        } else if (logic.skip(simbol)) {
-            System.out.println(opponent.getName() + " loses their turn!");
+        }
+
+        if (logic.skip(sym)) {
+            System.out.println(opponent.getName() + " loses turn.");
             return true;
         }
 
-        return false; 
+        return false;
     }
 }
+
+
 
 

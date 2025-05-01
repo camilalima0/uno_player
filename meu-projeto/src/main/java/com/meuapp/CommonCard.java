@@ -2,12 +2,12 @@ package com.meuapp;
 
 public class CommonCard extends Card{
     private Color color;
-    private Simbol simbol;
+    private Symbol symbol;
     
-    public CommonCard(String name, Color color, Simbol simbol) {
+    public CommonCard(String name, Color color, Symbol symbol) {
         super(name);
         this.color = color;
-        this.simbol = simbol;
+        this.symbol = symbol;
     }
 
     @Override
@@ -16,8 +16,8 @@ public class CommonCard extends Card{
     }
 
     @Override
-    public Simbol getSimbol() {
-        return simbol;
+    public Symbol getSymbol() {
+        return symbol;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class CommonCard extends Card{
         return "CommonCard{" +
                 "name='" + getName() + '\'' +
                 ", color='" + color + '\'' +
-                ", simbol='" + simbol + '\'' +
+                ", symbol='" + symbol + '\'' +
                 '}';
     }
 }

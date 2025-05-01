@@ -20,7 +20,7 @@ public abstract class Card {
     public Color getColor() {
         return null;
     }
-    public Simbol getSimbol() {
+    public Symbol getSymbol() {
         return null;
     }
 

@@ -1,78 +1,83 @@
 package com.meuapp;
-import org.jpl7.*;
+
 import java.util.Scanner;
+import org.jpl7.Query;
 
 public class UnoLogic {
 
     public UnoLogic() {
         Query q1 = new Query("consult('rules.pl')");
-        System.out.println("Arquivo Carregado: " + (q1.hasSolution() ? "Sim" : "Não"));
+        System.out.println("Prolog file loaded: " + (q1.hasSolution() ? "Yes" : "No"));
     }
 
-    public boolean canPlayCC(Color c1, Simbol s1, Color c2, Simbol s2) {
-        return new Query("canPlayCC(" + c1.toString().toLowerCase() + ", " + s1.toString().toLowerCase() +
-                         ", " + c2.toString().toLowerCase() + ", " + s2.toString().toLowerCase() + ")").hasSolution();
-    }
+    public boolean canPlay(Card card1, Card card2, Player player) {
+        String topColor = card1.getColor() != null ? card1.getColor().toString().toLowerCase() : "none";
+        String topSymbol = card1.getSymbol().toString().toLowerCase();
+        String playedColor = card2.getColor() != null ? card2.getColor().toString().toLowerCase() : "none";
+        String playedSymbol = card2.getSymbol().toString().toLowerCase();
 
-    public boolean canPlayWW() {
-        return new Query("canPlayWW").hasSolution();
-    }
+        String query;
 
-    public boolean canPlayWC(Color chosenColor, Color color2) {
-        return new Query("canPlayWC(" + chosenColor.toString().toLowerCase() + ", " + color2.toString().toLowerCase() + ")").hasSolution();
-    }
+        if (isCommon(card2) && isCommon(card1)) {
+            query = String.format("canPlayCC(%s, %s, %s, %s)",
+                    playedColor, playedSymbol, topColor, topSymbol);
+        } else if (isWild(card2) && isCommon(card1)) {
+            String chosenColor;
 
-    public boolean canPlayCW(String simbol1) {
-        return new Query("canPlayCW(" + simbol1.toLowerCase() + ")").hasSolution();
-    }
-
-    public boolean canPlay(Player user, Computer computer, Card card1, Card card2) {
-        if (card1 instanceof CommonCard && card2 instanceof CommonCard) {
-            return canPlayCC(card1.getColor(), card1.getSimbol(), card2.getColor(), card2.getSimbol());
-        } else if (card1 instanceof WildCard && card2 instanceof WildCard) {
-            return canPlayWW();
-        } else if (card1 instanceof WildCard && card2 instanceof CommonCard) {
-            Color chosenColor;
-            if (user instanceof Computer) {
-                chosenColor = ((Computer) user).chooseColor();
-                System.out.println("Computer chose: " + chosenColor);
+            if (player instanceof Computer) {
+                Color random = Color.values()[(int) (Math.random() * 4)]; // red, green, blue, yellow
+                chosenColor = random.toString().toLowerCase();
+                System.out.println("Computer chose color: " + chosenColor);
             } else {
-                Scanner sc = new Scanner(System.in);
+                Scanner scanner = new Scanner(System.in);
                 while (true) {
-                    System.out.println("RED, BLUE, GREEN, YELLOW");
-                    System.out.print("Choose a color: ");
-                    String input = sc.nextLine().toUpperCase();
-                    try {
-                        chosenColor = Color.valueOf(input);
+                    System.out.print("Choose a color (red, green, blue, yellow): ");
+                    String input = scanner.nextLine().trim().toLowerCase();
+                    if (input.equals("red") || input.equals("green") || input.equals("blue") || input.equals("yellow")) {
+                        chosenColor = input;
                         break;
-                    } catch (IllegalArgumentException e) {
+                    } else {
                         System.out.println("Invalid color. Try again.");
                     }
+                    scanner.close();
                 }
-                sc.close();
             }
-            return canPlayWC(chosenColor, card2.getColor());
-        } else if (card1 instanceof CommonCard && card2 instanceof WildCard) {
-            return canPlayCW(card1.getSimbol().toString());
+
+            query = String.format("canPlayWC(%s, %s)", chosenColor, topColor);
+        } else if (isCommon(card2) && isWild(card1)) {
+            query = String.format("canPlayCW(%s)", playedSymbol);
+        } else if (isWild(card2) && isWild(card1)) {
+            query = "canPlayWW";
+        } else {
+            return false;
         }
-        return false;
+
+        return new Query(query).hasSolution();
     }
 
-    public boolean drawTwo(Simbol simbol1) {
-        return simbol1 == Simbol.DRAW_TWO;
+    public boolean drawTwo(Symbol symbol) {
+        return new Query("draw_two(" + symbol.toString().toLowerCase() + ")").hasSolution();
     }
 
-    public boolean skip(Simbol simbol1) {
-        return simbol1 == Simbol.SKIP;
+    public boolean drawFour(Symbol symbol) {
+        return new Query("draw_four(" + symbol.toString().toLowerCase() + ")").hasSolution();
     }
 
-    public boolean drawFour(Simbol simbol1) {
-        return simbol1 == Simbol.DRAW_FOUR;
+    public boolean skip(Symbol symbol) {
+        return new Query("skip(" + symbol.toString().toLowerCase() + ")").hasSolution();
     }
 
-    public boolean reverse(Simbol simbol1) {
-        return simbol1 == Simbol.REVERSE;
+    private boolean isWild(Card card) {
+        Symbol sym = card.getSymbol();
+        return sym == Symbol.WILD || sym == Symbol.DRAW_FOUR;
+    }
+
+    private boolean isCommon(Card card) {
+        return !isWild(card);
     }
 }
+
+
+
 
  
