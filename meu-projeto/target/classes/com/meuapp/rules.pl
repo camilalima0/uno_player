@@ -20,9 +20,5 @@ canPlayCW(Simbol1) :-
     Simbol1 \= skip,
     Simbol1 \= drawTwo.
 
-drawTwo(drawTwo).
-skip(skip).
-drawFour(drawFour).
-reverse(reverse).
 
 

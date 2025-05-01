@@ -10,7 +10,7 @@ action cards (24):
 skip (2 of each color)
 reverse (2 of each color)
 draw two (+2) (2 of each color)
-names: skipRed0, skipRed2... reverseRed1, reverseRed2..., drawTwoRed1, drawTwoRed2...
+names: skipRedA, skipRedB... reverseRedA, reverseRedB..., drawTwoRedA, drawTwoRedB...
 
 wild cards (8):
 wild (4 cards)

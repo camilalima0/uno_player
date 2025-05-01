@@ -1,4 +1,5 @@
 package com.meuapp;
+
 public abstract class Card {
     private String name;
 
