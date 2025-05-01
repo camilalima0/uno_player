@@ -8,6 +8,7 @@ public class WildCard extends Card{
         this.simbol = simbol;
     }
 
+    @Override
     public Simbol getSimbol() {
         return simbol;
     }

@@ -16,4 +16,12 @@ public abstract class Card {
                 "name='" + name + '\'' +
                 '}';
     }
+
+    public Color getColor() {
+        return null;
+    }
+    public Simbol getSimbol() {
+        return null;
+    }
+
 }

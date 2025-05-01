@@ -34,6 +34,7 @@ public class Deck {
             cards.add(new WildCard("Wild" + i, Simbol.WILD));
             cards.add(new WildCard("WildDrawFour" + i, Simbol.DRAW_FOUR));
         }
+        System.out.println ("cartas no baralho: " + cards.size());
     }
 
     //returns and remove the first card of the deck
@@ -46,7 +47,6 @@ public class Deck {
         List<Card> hand = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             hand.add(drawCard());
-            cards.remove(drawCard());
         }
         return hand;
     }

@@ -16,4 +16,4 @@ public class App
         game.startGame(name);
         sc.close();
     }
-}
+} 
