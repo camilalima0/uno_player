@@ -30,7 +30,7 @@ public class Game {
 
         boolean userTurn = true;
         while (!user.getHand().isEmpty() && !computer.getHand().isEmpty()) {
-            game.showState();
+            showState();
             if (userTurn) {
                 System.out.println(name + "'s turn");
                 userTurn();
