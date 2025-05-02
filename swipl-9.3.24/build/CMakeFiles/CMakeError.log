@@ -1,0 +1,551 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_dc2a9 && [1/2] Building C object CMakeFiles/cmTC_dc2a9.dir/src.c.o
+[2/2] Linking C executable cmTC_dc2a9
+FAILED: cmTC_dc2a9 
+: && /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_dc2a9.dir/src.c.o  -o cmTC_dc2a9   && :
+/usr/bin/ld: CMakeFiles/cmTC_dc2a9.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the include file dl.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d31cc && [1/2] Building C object CMakeFiles/cmTC_d31cc.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_d31cc.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_d31cc.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: dl.h: No such file or directory
+    1 | #include <dl.h>
+      |          ^~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file dmalloc.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_238f5 && [1/2] Building C object CMakeFiles/cmTC_238f5.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_238f5.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_238f5.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: dmalloc.h: No such file or directory
+    1 | #include <dmalloc.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file floatingpoint.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ef461 && [1/2] Building C object CMakeFiles/cmTC_ef461.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_ef461.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_ef461.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: floatingpoint.h: No such file or directory
+    1 | #include <floatingpoint.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file ieeefp.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1022f && [1/2] Building C object CMakeFiles/cmTC_1022f.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_1022f.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_1022f.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: ieeefp.h: No such file or directory
+    1 | #include <ieeefp.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file libloaderapi.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a6886 && [1/2] Building C object CMakeFiles/cmTC_a6886.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_a6886.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_a6886.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: libloaderapi.h: No such file or directory
+    1 | #include <libloaderapi.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file ncurses/curses.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_da2a7 && [1/2] Building C object CMakeFiles/cmTC_da2a7.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_da2a7.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_da2a7.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: ncurses/curses.h: No such file or directory
+    1 | #include <ncurses/curses.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file ncurses/term.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9d272 && [1/2] Building C object CMakeFiles/cmTC_9d272.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_9d272.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_9d272.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: ncurses/term.h: No such file or directory
+    1 | #include <ncurses/term.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file shlobj.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_07b53 && [1/2] Building C object CMakeFiles/cmTC_07b53.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_07b53.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_07b53.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: shlobj.h: No such file or directory
+    1 | #include <shlobj.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file sys/ndir.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_75c02 && [1/2] Building C object CMakeFiles/cmTC_75c02.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_75c02.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_75c02.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: sys/ndir.h: No such file or directory
+    1 | #include <sys/ndir.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file sys/termio.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_46247 && [1/2] Building C object CMakeFiles/cmTC_46247.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_46247.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_46247.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: sys/termio.h: No such file or directory
+    1 | #include <sys/termio.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file vfork.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c0a93 && [1/2] Building C object CMakeFiles/cmTC_c0a93.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_c0a93.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_c0a93.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: vfork.h: No such file or directory
+    1 | #include <vfork.h>
+      |          ^~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file mach/thread_act.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_93330 && [1/2] Building C object CMakeFiles/cmTC_93330.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_93330.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_93330.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: mach/thread_act.h: No such file or directory
+    1 | #include <mach/thread_act.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file sys/stropts.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5776f && [1/2] Building C object CMakeFiles/cmTC_5776f.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_5776f.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_5776f.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: sys/stropts.h: No such file or directory
+    1 | #include <sys/stropts.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file crt_externs.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_96081 && [1/2] Building C object CMakeFiles/cmTC_96081.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_96081.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_96081.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: crt_externs.h: No such file or directory
+    1 | #include <crt_externs.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file gperftools/malloc_extension_c.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1da4c && [1/2] Building C object CMakeFiles/cmTC_1da4c.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_1da4c.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_1da4c.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: gperftools/malloc_extension_c.h: No such file or directory
+    1 | #include <gperftools/malloc_extension_c.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function qsort_s exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4f9f4 && [1/2] Building C object CMakeFiles/cmTC_4f9f4.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4f9f4
+FAILED: cmTC_4f9f4 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=qsort_s   CMakeFiles/cmTC_4f9f4.dir/CheckFunctionExists.c.o  -o cmTC_4f9f4  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_4f9f4.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `qsort_s'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function stricmp exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f2f53 && [1/2] Building C object CMakeFiles/cmTC_f2f53.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f2f53
+FAILED: cmTC_f2f53 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=stricmp   CMakeFiles/cmTC_f2f53.dir/CheckFunctionExists.c.o  -o cmTC_f2f53  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_f2f53.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `stricmp'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function strlwr exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7e965 && [1/2] Building C object CMakeFiles/cmTC_7e965.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7e965
+FAILED: cmTC_7e965 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=strlwr   CMakeFiles/cmTC_7e965.dir/CheckFunctionExists.c.o  -o cmTC_7e965  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_7e965.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `strlwr'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function mbcasescoll exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5cc2c && [1/2] Building C object CMakeFiles/cmTC_5cc2c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_5cc2c
+FAILED: cmTC_5cc2c 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=mbcasescoll   CMakeFiles/cmTC_5cc2c.dir/CheckFunctionExists.c.o  -o cmTC_5cc2c  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_5cc2c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `mbcasescoll'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function _NSGetEnviron exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4c95c && [1/2] Building C object CMakeFiles/cmTC_4c95c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4c95c
+FAILED: cmTC_4c95c 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=_NSGetEnviron   CMakeFiles/cmTC_4c95c.dir/CheckFunctionExists.c.o  -o cmTC_4c95c  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_4c95c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `_NSGetEnviron'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function mallinfo2 exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6f462 && [1/2] Building C object CMakeFiles/cmTC_6f462.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_6f462
+FAILED: cmTC_6f462 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=mallinfo2   CMakeFiles/cmTC_6f462.dir/CheckFunctionExists.c.o  -o cmTC_6f462  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_6f462.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `mallinfo2'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function shl_load exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e0569 && [1/2] Building C object CMakeFiles/cmTC_e0569.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e0569
+FAILED: cmTC_e0569 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=shl_load   CMakeFiles/cmTC_e0569.dir/CheckFunctionExists.c.o  -o cmTC_e0569  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_e0569.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `shl_load'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function sgttyb exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2ff6d && [1/2] Building C object CMakeFiles/cmTC_2ff6d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2ff6d
+FAILED: cmTC_2ff6d 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=sgttyb   CMakeFiles/cmTC_2ff6d.dir/CheckFunctionExists.c.o  -o cmTC_2ff6d  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_2ff6d.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgttyb'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function fpclass exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f87d8 && [1/2] Building C object CMakeFiles/cmTC_f87d8.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f87d8
+FAILED: cmTC_f87d8 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=fpclass   CMakeFiles/cmTC_f87d8.dir/CheckFunctionExists.c.o  -o cmTC_f87d8  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_f87d8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `fpclass'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function fpresetsticky exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7ef16 && [1/2] Building C object CMakeFiles/cmTC_7ef16.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7ef16
+FAILED: cmTC_7ef16 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=fpresetsticky   CMakeFiles/cmTC_7ef16.dir/CheckFunctionExists.c.o  -o cmTC_7ef16  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_7ef16.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `fpresetsticky'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function fpsetmask exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_57113 && [1/2] Building C object CMakeFiles/cmTC_57113.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_57113
+FAILED: cmTC_57113 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=fpsetmask   CMakeFiles/cmTC_57113.dir/CheckFunctionExists.c.o  -o cmTC_57113  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_57113.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `fpsetmask'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function localtime_s exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d2f33 && [1/2] Building C object CMakeFiles/cmTC_d2f33.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_d2f33
+FAILED: cmTC_d2f33 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=localtime_s   CMakeFiles/cmTC_d2f33.dir/CheckFunctionExists.c.o  -o cmTC_d2f33  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_d2f33.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `localtime_s'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function delay exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b5ba2 && [1/2] Building C object CMakeFiles/cmTC_b5ba2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b5ba2
+FAILED: cmTC_b5ba2 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=delay   CMakeFiles/cmTC_b5ba2.dir/CheckFunctionExists.c.o  -o cmTC_b5ba2  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_b5ba2.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `delay'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function dossleep exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ed4cd && [1/2] Building C object CMakeFiles/cmTC_ed4cd.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_ed4cd
+FAILED: cmTC_ed4cd 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=dossleep   CMakeFiles/cmTC_ed4cd.dir/CheckFunctionExists.c.o  -o cmTC_ed4cd  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_ed4cd.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `dossleep'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test SYS_CPUSET_H_FOUND failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_37042 && [1/2] Building C object CMakeFiles/cmTC_37042.dir/src.c.o
+FAILED: CMakeFiles/cmTC_37042.dir/src.c.o 
+/usr/bin/cc   -DSYS_CPUSET_H_FOUND   -std=gnu11 -o CMakeFiles/cmTC_37042.dir/src.c.o   -c src.c
+src.c:2:15: fatal error: sys/cpuset.h: No such file or directory
+    2 |      #include <sys/cpuset.h>
+      |               ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <sys/param.h>
+     #include <sys/cpuset.h>
+     int main() {}
+Determining if the include file pthread_np.h exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7fce4 && [1/2] Building C object CMakeFiles/cmTC_7fce4.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_7fce4.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_7fce4.dir/CheckIncludeFile.c.o   -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: pthread_np.h: No such file or directory
+    1 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function pthread_getw32threadhandle_np exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8d56a && [1/2] Building C object CMakeFiles/cmTC_8d56a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8d56a
+FAILED: cmTC_8d56a 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_getw32threadhandle_np   CMakeFiles/cmTC_8d56a.dir/CheckFunctionExists.c.o  -o cmTC_8d56a  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_8d56a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_getw32threadhandle_np'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function sema_init exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0d705 && [1/2] Building C object CMakeFiles/cmTC_0d705.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_0d705
+FAILED: cmTC_0d705 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=sema_init   CMakeFiles/cmTC_0d705.dir/CheckFunctionExists.c.o  -o cmTC_0d705  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_0d705.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sema_init'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test HAVE_PTHREAD_SETNAME_NP_WITH_TID_AND_ARG failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9ad86 && [1/2] Building C object CMakeFiles/cmTC_9ad86.dir/src.c.o
+FAILED: CMakeFiles/cmTC_9ad86.dir/src.c.o 
+/usr/bin/cc   -DHAVE_PTHREAD_SETNAME_NP_WITH_TID_AND_ARG   -std=gnu11 -o CMakeFiles/cmTC_9ad86.dir/src.c.o   -c src.c
+src.c: In function ‘main’:
+src.c:4:10: error: too many arguments to function ‘pthread_setname_np’
+    4 |        { pthread_setname_np(0, "%s", (void *)"myname"); return 0;
+      |          ^~~~~~~~~~~~~~~~~~
+In file included from src.c:2:
+/usr/include/pthread.h:427:12: note: declared here
+  427 | extern int pthread_setname_np (pthread_t __target_thread, const char *__name)
+      |            ^~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#define _GNU_SOURCE
+       #include <pthread.h>
+       int main()
+       { pthread_setname_np(0, "%s", (void *)"myname"); return 0;
+       }
+Determining if the function WSAPoll exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e23a2 && [1/2] Building C object CMakeFiles/cmTC_e23a2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e23a2
+FAILED: cmTC_e23a2 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=WSAPoll   CMakeFiles/cmTC_e23a2.dir/CheckFunctionExists.c.o  -o cmTC_e23a2  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_e23a2.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `WSAPoll'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function WinExec exists failed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_223be && [1/2] Building C object CMakeFiles/cmTC_223be.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_223be
+FAILED: cmTC_223be 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=WinExec   CMakeFiles/cmTC_223be.dir/CheckFunctionExists.c.o  -o cmTC_223be  -ldl  -lm  -lrt  -lcurses  /usr/lib/x86_64-linux-gnu/libform.so  /usr/lib/x86_64-linux-gnu/libgmp.so  -pthread && :
+/usr/bin/ld: CMakeFiles/cmTC_223be.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `WinExec'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+

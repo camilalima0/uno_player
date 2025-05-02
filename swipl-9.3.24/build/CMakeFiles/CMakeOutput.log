@@ -1,0 +1,2050 @@
+The system is: Linux - 6.8.0-1026-azure - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b7de7 && [1/2] Building C object CMakeFiles/cmTC_b7de7.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_b7de7
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a5c59 && [1/2] Building C object CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccHUgqHx.s
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o /tmp/ccHUgqHx.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+[2/2] Linking C executable cmTC_a5c59
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a5c59' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRQTH1R.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a5c59 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a5c59' '-mtune=generic' '-march=x86-64'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_a5c59 && [1/2] Building C object CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccHUgqHx.s]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o /tmp/ccHUgqHx.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [[2/2] Linking C executable cmTC_a5c59]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a5c59' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRQTH1R.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a5c59 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccRQTH1R.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a5c59] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_a5c59.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5d1c4 && [1/2] Building CXX object CMakeFiles/cmTC_5d1c4.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_5d1c4
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b15aa && [1/2] Building CXX object CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cclbSlz6.s
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/9
+ /usr/include/x86_64-linux-gnu/c++/9
+ /usr/include/c++/9/backward
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o /tmp/cclbSlz6.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+[2/2] Linking CXX executable cmTC_b15aa
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b15aa' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZeyDfm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b15aa /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b15aa' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/9]
+    add: [/usr/include/x86_64-linux-gnu/c++/9]
+    add: [/usr/include/c++/9/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+  collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_b15aa && [1/2] Building CXX object CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cclbSlz6.s]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/9]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+  ignore line: [ /usr/include/c++/9/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o /tmp/cclbSlz6.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [[2/2] Linking CXX executable cmTC_b15aa]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b15aa' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZeyDfm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b15aa /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccZeyDfm.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b15aa] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_b15aa.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_688db && [1/2] Building C object CMakeFiles/cmTC_688db.dir/CheckIncludeFile.c.o
+[2/2] Linking C static library libcmTC_688db.a
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d0373 && [1/2] Building C object CMakeFiles/cmTC_d0373.dir/CheckIncludeFile.c.o
+[2/2] Linking C static library libcmTC_d0373.a
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e06ae && [1/2] Building C object CMakeFiles/cmTC_e06ae.dir/CheckIncludeFile.c.o
+[2/2] Linking C static library libcmTC_e06ae.a
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b2956 && [1/2] Building C object CMakeFiles/cmTC_b2956.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+[2/2] Linking C static library libcmTC_b2956.a
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9911b && [1/2] Building C object CMakeFiles/cmTC_9911b.dir/TestEndianess.c.o
+[2/2] Linking C static library libcmTC_9911b.a
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_92702 && [1/2] Building C object CMakeFiles/cmTC_92702.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_92702
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_aeed2 && [1/2] Building C object CMakeFiles/cmTC_aeed2.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_aeed2
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_bd9c9 && [1/2] Building C object CMakeFiles/cmTC_bd9c9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_bd9c9
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_55e69 && [1/2] Building C object CMakeFiles/cmTC_55e69.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_55e69
+
+
+
+Determining if the include file threads.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0ff53 && [1/2] Building C object CMakeFiles/cmTC_0ff53.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_0ff53
+
+
+
+Determining if the include file wchar.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a32fd && [1/2] Building C object CMakeFiles/cmTC_a32fd.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_a32fd
+
+
+
+Determining if the include file alloca.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_169bb && [1/2] Building C object CMakeFiles/cmTC_169bb.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_169bb
+
+
+
+Determining if the include file curses.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_67543 && [1/2] Building C object CMakeFiles/cmTC_67543.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_67543
+
+
+
+Determining if the include file dirent.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7d530 && [1/2] Building C object CMakeFiles/cmTC_7d530.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_7d530
+
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d1bf9 && [1/2] Building C object CMakeFiles/cmTC_d1bf9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_d1bf9
+
+
+
+Determining if the include file execinfo.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_44967 && [1/2] Building C object CMakeFiles/cmTC_44967.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_44967
+
+
+
+Determining if the include file float.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_89982 && [1/2] Building C object CMakeFiles/cmTC_89982.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_89982
+
+
+
+Determining if the include file ieee754.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_011a3 && [1/2] Building C object CMakeFiles/cmTC_011a3.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_011a3
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_19d99 && [1/2] Building C object CMakeFiles/cmTC_19d99.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_19d99
+
+
+
+Determining if the include file locale.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1a770 && [1/2] Building C object CMakeFiles/cmTC_1a770.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_1a770
+
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d537e && [1/2] Building C object CMakeFiles/cmTC_d537e.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_d537e
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9451a && [1/2] Building C object CMakeFiles/cmTC_9451a.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_9451a
+
+
+
+Determining if the include file poll.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_12757 && [1/2] Building C object CMakeFiles/cmTC_12757.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_12757
+
+
+
+Determining if the include file pwd.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_14820 && [1/2] Building C object CMakeFiles/cmTC_14820.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_14820
+
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b6af5 && [1/2] Building C object CMakeFiles/cmTC_b6af5.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_b6af5
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_04ab2 && [1/2] Building C object CMakeFiles/cmTC_04ab2.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_04ab2
+
+
+
+Determining if the include file sys/dir.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6cbd0 && [1/2] Building C object CMakeFiles/cmTC_6cbd0.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_6cbd0
+
+
+
+Determining if the include file sys/file.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c418a && [1/2] Building C object CMakeFiles/cmTC_c418a.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_c418a
+
+
+
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e749b && [1/2] Building C object CMakeFiles/cmTC_e749b.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_e749b
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_cedfb && [1/2] Building C object CMakeFiles/cmTC_cedfb.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_cedfb
+
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0ed31 && [1/2] Building C object CMakeFiles/cmTC_0ed31.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_0ed31
+
+
+
+Determining if the include file sys/select.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_60bf1 && [1/2] Building C object CMakeFiles/cmTC_60bf1.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_60bf1
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2d438 && [1/2] Building C object CMakeFiles/cmTC_2d438.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_2d438
+
+
+
+Determining if the include file sys/syscall.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_21a7c && [1/2] Building C object CMakeFiles/cmTC_21a7c.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_21a7c
+
+
+
+Determining if the include file sys/ioctl.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c26d0 && [1/2] Building C object CMakeFiles/cmTC_c26d0.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_c26d0
+
+
+
+Determining if the include file sys/termios.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3fbe5 && [1/2] Building C object CMakeFiles/cmTC_3fbe5.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_3fbe5
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6c734 && [1/2] Building C object CMakeFiles/cmTC_6c734.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_6c734
+
+
+
+Determining if the include file sys/wait.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_71ae5 && [1/2] Building C object CMakeFiles/cmTC_71ae5.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_71ae5
+
+
+
+Determining if the include file term.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4ec21 && [1/2] Building C object CMakeFiles/cmTC_4ec21.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_4ec21
+
+
+
+Determining if the include file time.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_643d3 && [1/2] Building C object CMakeFiles/cmTC_643d3.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_643d3
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3ec6b && [1/2] Building C object CMakeFiles/cmTC_3ec6b.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_3ec6b
+
+
+
+Determining if the include file valgrind/valgrind.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0aad1 && [1/2] Building C object CMakeFiles/cmTC_0aad1.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_0aad1
+
+
+
+Determining if the include file zlib.h exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e0a03 && [1/2] Building C object CMakeFiles/cmTC_e0a03.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_e0a03
+
+
+
+Performing C SOURCE FILE Test HAVE_GCC_ATOMIC succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1ca01 && [1/2] Building C object CMakeFiles/cmTC_1ca01.dir/src.c.o
+[2/2] Linking C executable cmTC_1ca01
+
+
+Source file was:
+int val = 1;
+     int main() { __atomic_add_fetch(&val, 2, __ATOMIC_SEQ_CST); }
+Performing C SOURCE FILE Test HAVE_GCC_ATOMIC_8 succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_340db && [1/2] Building C object CMakeFiles/cmTC_340db.dir/src.c.o
+[2/2] Linking C executable cmTC_340db
+
+
+Source file was:
+#include <stdint.h>
+     uint64_t val = 1;
+     int main() { __atomic_add_fetch(&val, 2, __ATOMIC_SEQ_CST); }
+Performing C SOURCE FILE Test HAVE___BUILTIN_MUL_OVERFLOW succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_baf54 && [1/2] Building C object CMakeFiles/cmTC_baf54.dir/src.c.o
+[2/2] Linking C executable cmTC_baf54
+
+
+Source file was:
+#include <stdint.h>
+     int64_t r1 = 1;
+     int64_t r2 = 3;
+     int64_t r3;
+     int main() { __builtin_mul_overflow(r1,r2,&r3); }
+Determining if the function dlopen exists in the dl passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5dec4 && [1/2] Building C object CMakeFiles/cmTC_5dec4.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_5dec4
+
+
+
+Determining if the function sin exists in the m passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1cb6c && [1/2] Building C object CMakeFiles/cmTC_1cb6c.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘sin’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘sin’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+[2/2] Linking C executable cmTC_1cb6c
+
+
+
+Determining if the function clock_gettime exists in the rt passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2f760 && [1/2] Building C object CMakeFiles/cmTC_2f760.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2f760
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2db30 && [1/2] Building C object CMakeFiles/cmTC_2db30.dir/SIZEOF_INT.c.o
+[2/2] Linking C static library libcmTC_2db30.a
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9d30c && [1/2] Building C object CMakeFiles/cmTC_9d30c.dir/SIZEOF_LONG.c.o
+[2/2] Linking C static library libcmTC_9d30c.a
+
+
+
+Determining size of void * passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0681c && [1/2] Building C object CMakeFiles/cmTC_0681c.dir/SIZEOF_VOIDP.c.o
+[2/2] Linking C static library libcmTC_0681c.a
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d1844 && [1/2] Building C object CMakeFiles/cmTC_d1844.dir/SIZEOF_LONG_LONG.c.o
+[2/2] Linking C static library libcmTC_d1844.a
+
+
+
+Determining size of wchar_t passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_36039 && [1/2] Building C object CMakeFiles/cmTC_36039.dir/SIZEOF_WCHAR_T.c.o
+[2/2] Linking C static library libcmTC_36039.a
+
+
+
+Determining size of wint_t passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4e2f1 && [1/2] Building C object CMakeFiles/cmTC_4e2f1.dir/SIZEOF_WINT_T.c.o
+[2/2] Linking C static library libcmTC_4e2f1.a
+
+
+
+Determining size of off_t passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a0935 && [1/2] Building C object CMakeFiles/cmTC_a0935.dir/SIZEOF_OFF_T.c.o
+[2/2] Linking C static library libcmTC_a0935.a
+
+
+
+Determining size of __int128 passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1c6c7 && [1/2] Building C object CMakeFiles/cmTC_1c6c7.dir/INT128.c.o
+[2/2] Linking C static library libcmTC_1c6c7.a
+
+
+
+Determining size of mp_bitcnt_t passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e97e6 && [1/2] Building C object CMakeFiles/cmTC_e97e6.dir/SIZEOF_MP_BITCNT_T.c.o
+[2/2] Linking C static library libcmTC_e97e6.a
+
+
+
+Determining size of z_crc_t passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0b99b && [1/2] Building C object CMakeFiles/cmTC_0b99b.dir/SIZEOF_Z_CRC_T.c.o
+[2/2] Linking C static library libcmTC_0b99b.a
+
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c74f5 && [1/2] Building C object CMakeFiles/cmTC_c74f5.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c74f5
+
+
+
+Determining if the function popen exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7ba42 && [1/2] Building C object CMakeFiles/cmTC_7ba42.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7ba42
+
+
+
+Determining if the function strerror exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8e22b && [1/2] Building C object CMakeFiles/cmTC_8e22b.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8e22b
+
+
+
+Determining if the function poll exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8d0b9 && [1/2] Building C object CMakeFiles/cmTC_8d0b9.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8d0b9
+
+
+
+Determining if the function getpwnam exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1067d && [1/2] Building C object CMakeFiles/cmTC_1067d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1067d
+
+
+
+Determining if the function fork exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e263b && [1/2] Building C object CMakeFiles/cmTC_e263b.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘fork’; expected ‘int(void)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+[2/2] Linking C executable cmTC_e263b
+
+
+
+Determining if the function vfork exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_92380 && [1/2] Building C object CMakeFiles/cmTC_92380.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_92380
+
+
+
+Determining if the function qsort_r exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e36a6 && [1/2] Building C object CMakeFiles/cmTC_e36a6.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e36a6
+
+
+
+Determining if the function getpagesize exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_79ca4 && [1/2] Building C object CMakeFiles/cmTC_79ca4.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_79ca4
+
+
+
+Determining if the function access exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6001b && [1/2] Building C object CMakeFiles/cmTC_6001b.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_6001b
+
+
+
+Determining if the function chmod exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_242a0 && [1/2] Building C object CMakeFiles/cmTC_242a0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_242a0
+
+
+
+Determining if the function fchmod exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7d9bc && [1/2] Building C object CMakeFiles/cmTC_7d9bc.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7d9bc
+
+
+
+Determining if the function fcntl exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_167ca && [1/2] Building C object CMakeFiles/cmTC_167ca.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_167ca
+
+
+
+Determining if the function fstat exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_33337 && [1/2] Building C object CMakeFiles/cmTC_33337.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_33337
+
+
+
+Determining if the function ftruncate exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1e4e2 && [1/2] Building C object CMakeFiles/cmTC_1e4e2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1e4e2
+
+
+
+Determining if the function getcwd exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c14f0 && [1/2] Building C object CMakeFiles/cmTC_c14f0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c14f0
+
+
+
+Determining if the function getwd exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b9552 && [1/2] Building C object CMakeFiles/cmTC_b9552.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b9552
+/usr/bin/ld: CMakeFiles/cmTC_b9552.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): warning: the `getwd' function is dangerous and should not be used.
+
+
+
+Determining if the function opendir exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_aade7 && [1/2] Building C object CMakeFiles/cmTC_aade7.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_aade7
+
+
+
+Determining if the function readlink exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_29f54 && [1/2] Building C object CMakeFiles/cmTC_29f54.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_29f54
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b1460 && [1/2] Building C object CMakeFiles/cmTC_b1460.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b1460
+
+
+
+Determining if the function rename exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_41647 && [1/2] Building C object CMakeFiles/cmTC_41647.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_41647
+
+
+
+Determining if the function stat exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c61d9 && [1/2] Building C object CMakeFiles/cmTC_c61d9.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c61d9
+
+
+
+Determining if the function fopen64 exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4c54a && [1/2] Building C object CMakeFiles/cmTC_4c54a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4c54a
+
+
+
+Determining if the function memmove exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_58268 && [1/2] Building C object CMakeFiles/cmTC_58268.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘memmove’; expected ‘void *(void *, const void *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘memmove’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+[2/2] Linking C executable cmTC_58268
+
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_04e08 && [1/2] Building C object CMakeFiles/cmTC_04e08.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘strcasecmp’; expected ‘int(const char *, const char *)’ [-Wbuiltin-declaration-mismatch]
+<command-line>: note: in definition of macro ‘CHECK_FUNCTION_EXISTS’
+[2/2] Linking C executable cmTC_04e08
+
+
+
+Determining if the function setlocale exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f2f85 && [1/2] Building C object CMakeFiles/cmTC_f2f85.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f2f85
+
+
+
+Determining if the function mbsnrtowcs exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d911c && [1/2] Building C object CMakeFiles/cmTC_d911c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_d911c
+
+
+
+Determining if the function localeconv exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fd4ae && [1/2] Building C object CMakeFiles/cmTC_fd4ae.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_fd4ae
+
+
+
+Determining if the function wcsdup exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b4bfb && [1/2] Building C object CMakeFiles/cmTC_b4bfb.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b4bfb
+
+
+
+Determining if the function wcsxfrm exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_12ad3 && [1/2] Building C object CMakeFiles/cmTC_12ad3.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_12ad3
+
+
+
+Determining if the function getuid exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5e0a5 && [1/2] Building C object CMakeFiles/cmTC_5e0a5.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_5e0a5
+
+
+
+Determining if the function getpid exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2e96d && [1/2] Building C object CMakeFiles/cmTC_2e96d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2e96d
+
+
+
+Determining if the function waitpid exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_57c48 && [1/2] Building C object CMakeFiles/cmTC_57c48.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_57c48
+
+
+
+Determining if the function setenv exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3a3fe && [1/2] Building C object CMakeFiles/cmTC_3a3fe.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_3a3fe
+
+
+
+Determining if the function putenv exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3c368 && [1/2] Building C object CMakeFiles/cmTC_3c368.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_3c368
+
+
+
+Determining if the function unsetenv exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3d532 && [1/2] Building C object CMakeFiles/cmTC_3d532.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_3d532
+
+
+
+Determining if the function sysconf exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0fd3d && [1/2] Building C object CMakeFiles/cmTC_0fd3d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_0fd3d
+
+
+
+Determining if the function confstr exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_991fd && [1/2] Building C object CMakeFiles/cmTC_991fd.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_991fd
+
+
+
+Determining if the function getrlimit exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1fbbf && [1/2] Building C object CMakeFiles/cmTC_1fbbf.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1fbbf
+
+
+
+Determining if the function getrusage exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c7999 && [1/2] Building C object CMakeFiles/cmTC_c7999.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c7999
+
+
+
+Determining if the function mallinfo exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_142b7 && [1/2] Building C object CMakeFiles/cmTC_142b7.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_142b7
+
+
+
+Determining if the function dlopen exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_03fdf && [1/2] Building C object CMakeFiles/cmTC_03fdf.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_03fdf
+
+
+
+Determining if the function dladdr exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fada5 && [1/2] Building C object CMakeFiles/cmTC_fada5.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_fada5
+
+
+
+Determining if the function signal exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_50ded && [1/2] Building C object CMakeFiles/cmTC_50ded.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_50ded
+
+
+
+Determining if the function sigprocmask exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_60458 && [1/2] Building C object CMakeFiles/cmTC_60458.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_60458
+
+
+
+Determining if the function sigsetmask exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_45a2b && [1/2] Building C object CMakeFiles/cmTC_45a2b.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_45a2b
+
+
+
+Determining if the function siggetmask exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_17a8c && [1/2] Building C object CMakeFiles/cmTC_17a8c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_17a8c
+/usr/bin/ld: CMakeFiles/cmTC_17a8c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): warning: warning: `siggetmask' is obsolete; `sigprocmask' is best
+
+
+
+Determining if the function sigaction exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4417a && [1/2] Building C object CMakeFiles/cmTC_4417a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4417a
+
+
+
+Determining if the function sigset exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_85dc5 && [1/2] Building C object CMakeFiles/cmTC_85dc5.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_85dc5
+
+
+
+Determining if the function sigblock exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2f3c3 && [1/2] Building C object CMakeFiles/cmTC_2f3c3.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2f3c3
+
+
+
+Determining if the function sigaltstack exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_85d4f && [1/2] Building C object CMakeFiles/cmTC_85d4f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_85d4f
+
+
+
+Determining if the function kill exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_14d1d && [1/2] Building C object CMakeFiles/cmTC_14d1d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_14d1d
+
+
+
+Determining if the function backtrace exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6121a && [1/2] Building C object CMakeFiles/cmTC_6121a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_6121a
+
+
+
+Determining if the function alarm exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_937e4 && [1/2] Building C object CMakeFiles/cmTC_937e4.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_937e4
+
+
+
+Determining if the function mtrace exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d7202 && [1/2] Building C object CMakeFiles/cmTC_d7202.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_d7202
+
+
+
+Determining if the function tgetent exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2dbd4 && [1/2] Building C object CMakeFiles/cmTC_2dbd4.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2dbd4
+
+
+
+Determining if the function tcsetattr exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1cbfb && [1/2] Building C object CMakeFiles/cmTC_1cbfb.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1cbfb
+
+
+
+Determining if the function grantpt exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2dfad && [1/2] Building C object CMakeFiles/cmTC_2dfad.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2dfad
+
+
+
+Determining if the function cfmakeraw exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6dc4f && [1/2] Building C object CMakeFiles/cmTC_6dc4f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_6dc4f
+
+
+
+Determining if the function ceil exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_52210 && [1/2] Building C object CMakeFiles/cmTC_52210.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘ceil’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘ceil’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+[2/2] Linking C executable cmTC_52210
+
+
+
+Determining if the function floor exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c4b33 && [1/2] Building C object CMakeFiles/cmTC_c4b33.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘floor’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘floor’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+[2/2] Linking C executable cmTC_c4b33
+
+
+
+Determining if the function srand exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_cb851 && [1/2] Building C object CMakeFiles/cmTC_cb851.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_cb851
+
+
+
+Determining if the function srandom exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3eaa0 && [1/2] Building C object CMakeFiles/cmTC_3eaa0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_3eaa0
+
+
+
+Determining if the function random exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1ca55 && [1/2] Building C object CMakeFiles/cmTC_1ca55.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1ca55
+
+
+
+Determining if the function rint exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c9bfb && [1/2] Building C object CMakeFiles/cmTC_c9bfb.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘rint’; expected ‘double(double)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘rint’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+[2/2] Linking C executable cmTC_c9bfb
+
+
+
+Determining if the function isnan exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_26f64 && [1/2] Building C object CMakeFiles/cmTC_26f64.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘isnan’; expected ‘int()’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘isnan’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+[2/2] Linking C executable cmTC_26f64
+
+
+
+Determining if the function isinf exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_65f7b && [1/2] Building C object CMakeFiles/cmTC_65f7b.dir/CheckFunctionExists.c.o
+<command-line>: warning: conflicting types for built-in function ‘isinf’; expected ‘int()’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/share/cmake-3.16/Modules/CheckFunctionExists.c:1:1: note: ‘isinf’ is declared in header ‘<math.h>’
+  +++ |+#include <math.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+[2/2] Linking C executable cmTC_65f7b
+
+
+
+Determining if the function ftime exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ee22f && [1/2] Building C object CMakeFiles/cmTC_ee22f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_ee22f
+
+
+
+Determining if the function clock_gettime exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a992d && [1/2] Building C object CMakeFiles/cmTC_a992d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_a992d
+
+
+
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e9479 && [1/2] Building C object CMakeFiles/cmTC_e9479.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e9479
+
+
+
+Determining if the function localtime_r exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c7def && [1/2] Building C object CMakeFiles/cmTC_c7def.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c7def
+
+
+
+Determining if the function ctime_r exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1ff91 && [1/2] Building C object CMakeFiles/cmTC_1ff91.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1ff91
+
+
+
+Determining if the function asctime_r exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_bf1d2 && [1/2] Building C object CMakeFiles/cmTC_bf1d2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_bf1d2
+
+
+
+Determining if the function nanosleep exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0dcde && [1/2] Building C object CMakeFiles/cmTC_0dcde.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_0dcde
+
+
+
+Determining if the function sleep exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3ff05 && [1/2] Building C object CMakeFiles/cmTC_3ff05.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_3ff05
+
+
+
+Determining if the function usleep exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e756e && [1/2] Building C object CMakeFiles/cmTC_e756e.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e756e
+
+
+
+Determining if the function select exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7cd1c && [1/2] Building C object CMakeFiles/cmTC_7cd1c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7cd1c
+
+
+
+Determining if the function clock exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2adea && [1/2] Building C object CMakeFiles/cmTC_2adea.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2adea
+
+
+
+Determining if the function times exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b62fe && [1/2] Building C object CMakeFiles/cmTC_b62fe.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b62fe
+
+
+
+Determining if the function pthread_attr_setaffinity_np exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_db74f && [1/2] Building C object CMakeFiles/cmTC_db74f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_db74f
+
+
+
+Determining if the function pthread_getname_np exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_340fe && [1/2] Building C object CMakeFiles/cmTC_340fe.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_340fe
+
+
+
+Determining if the function pthread_kill exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c9db2 && [1/2] Building C object CMakeFiles/cmTC_c9db2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c9db2
+
+
+
+Determining if the function pthread_mutexattr_setkind_np exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9776f && [1/2] Building C object CMakeFiles/cmTC_9776f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_9776f
+
+
+
+Determining if the function pthread_mutexattr_settype exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e0f50 && [1/2] Building C object CMakeFiles/cmTC_e0f50.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e0f50
+
+
+
+Determining if the function pthread_mutex_timedlock exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3a09a && [1/2] Building C object CMakeFiles/cmTC_3a09a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_3a09a
+
+
+
+Determining if the function pthread_setconcurrency exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a968d && [1/2] Building C object CMakeFiles/cmTC_a968d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_a968d
+
+
+
+Determining if the function pthread_setname_np exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_88a98 && [1/2] Building C object CMakeFiles/cmTC_88a98.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_88a98
+
+
+
+Determining if the function pthread_sigmask exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8b61a && [1/2] Building C object CMakeFiles/cmTC_8b61a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8b61a
+
+
+
+Determining if the function pthread_timedjoin_np exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_166de && [1/2] Building C object CMakeFiles/cmTC_166de.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_166de
+
+
+
+Determining if the function pthread_getcpuclockid exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7ae3a && [1/2] Building C object CMakeFiles/cmTC_7ae3a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7ae3a
+
+
+
+Determining if the function pthread_attr_setstacksize exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_48ddb && [1/2] Building C object CMakeFiles/cmTC_48ddb.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_48ddb
+
+
+
+Determining if the function pthread_getattr_np exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_734a1 && [1/2] Building C object CMakeFiles/cmTC_734a1.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_734a1
+
+
+
+Determining if the function sched_setaffinity exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0f2b2 && [1/2] Building C object CMakeFiles/cmTC_0f2b2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_0f2b2
+
+
+
+Determining if the function sched_yield exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4d185 && [1/2] Building C object CMakeFiles/cmTC_4d185.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4d185
+
+
+
+Determining if the function sem_init exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7839f && [1/2] Building C object CMakeFiles/cmTC_7839f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7839f
+
+
+
+Determining if the function sem_timedwait exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d6a30 && [1/2] Building C object CMakeFiles/cmTC_d6a30.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_d6a30
+
+
+
+Determining if the function setitimer exists passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b1578 && [1/2] Building C object CMakeFiles/cmTC_b1578.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b1578
+
+
+
+Performing C SOURCE FILE Test HAVE_PTHREAD_MUTEX_RECURSIVE succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2e6d3 && [1/2] Building C object CMakeFiles/cmTC_2e6d3.dir/src.c.o
+[2/2] Linking C executable cmTC_2e6d3
+
+
+Source file was:
+#include <pthread.h>
+int main() { int i = PTHREAD_MUTEX_RECURSIVE; return 0;}
+Performing C SOURCE FILE Test HAVE_PTHREAD_SETNAME_NP_WITH_TID succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8d132 && [1/2] Building C object CMakeFiles/cmTC_8d132.dir/src.c.o
+[2/2] Linking C executable cmTC_8d132
+
+
+Source file was:
+#define _GNU_SOURCE
+       #include <pthread.h>
+int main()
+       { pthread_setname_np(0, "myname"); return 0;
+       }
+Performing C SOURCE FILE Test HAVE_GETTID_FUNCTION succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_dd906 && [1/2] Building C object CMakeFiles/cmTC_dd906.dir/src.c.o
+[2/2] Linking C executable cmTC_dd906
+
+
+Source file was:
+#define _GNU_SOURCE
+     #include <unistd.h>
+     int main()
+     { return gettid();
+     }
+Determining if the F_SETLKW exist passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_dca22 && [1/2] Building C object CMakeFiles/cmTC_dca22.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_dca22
+
+
+File /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef F_SETLKW
+  return ((int*)(&F_SETLKW))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_VAR_TIMEZONE succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_797e5 && [1/2] Building C object CMakeFiles/cmTC_797e5.dir/src.c.o
+[2/2] Linking C executable cmTC_797e5
+
+
+Source file was:
+#include <time.h>
+     extern long timezone;
+     int main() { return 0;}
+Determining if the SIGPROF exist passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d246b && [1/2] Building C object CMakeFiles/cmTC_d246b.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_d246b
+
+
+File /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SIGPROF
+  return ((int*)(&SIGPROF))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_STRUCT_TIME_TM_GMTOFF succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e0138 && [1/2] Building C object CMakeFiles/cmTC_e0138.dir/src.c.o
+[2/2] Linking C executable cmTC_e0138
+
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+  (void)sizeof(((struct tm *)0)->tm_gmtoff);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIM succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_31ad9 && [1/2] Building C object CMakeFiles/cmTC_31ad9.dir/src.c.o
+[2/2] Linking C executable cmTC_31ad9
+
+
+Source file was:
+
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtim);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_RU_IDRSS succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b06df && [1/2] Building C object CMakeFiles/cmTC_b06df.dir/src.c.o
+[2/2] Linking C executable cmTC_b06df
+
+
+Source file was:
+
+#include <sys/resource.h>
+
+int main()
+{
+  (void)sizeof(((struct rusage *)0)->ru_idrss);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_GMP_RANDINIT_MT succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_34a3d && [1/2] Building C object CMakeFiles/cmTC_34a3d.dir/src.c.o
+[2/2] Linking C executable cmTC_34a3d
+
+
+Source file was:
+#include <gmp.h>
+int main() { gmp_randinit_mt(0); return 0;}
+Performing C SOURCE FILE Test HAVE__BUILTIN_CLZ succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_150c5 && [1/2] Building C object CMakeFiles/cmTC_150c5.dir/src.c.o
+[2/2] Linking C executable cmTC_150c5
+
+
+Source file was:
+unsigned int x = 11; int main() { return __builtin_clz(x); }
+Performing C SOURCE FILE Test HAVE__BUILTIN_POPCOUNT succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a88a7 && [1/2] Building C object CMakeFiles/cmTC_a88a7.dir/src.c.o
+[2/2] Linking C executable cmTC_a88a7
+
+
+Source file was:
+unsigned int x = 11; int main() { return __builtin_popcount(x); }
+Performing C SOURCE FILE Test HAVE___BUILTIN_EXPECT succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9a965 && [1/2] Building C object CMakeFiles/cmTC_9a965.dir/src.c.o
+[2/2] Linking C executable cmTC_9a965
+
+
+Source file was:
+int i=0; int main() { return __builtin_expect(i, 0) ? 0 : 1; }
+Performing C SOURCE FILE Test HAVE___THREAD succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5eb1c && [1/2] Building C object CMakeFiles/cmTC_5eb1c.dir/src.c.o
+[2/2] Linking C executable cmTC_5eb1c
+
+
+Source file was:
+__thread int i=0; int main() { return 0; }
+Performing C SOURCE FILE Test HAVE_VOLATILE succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c1713 && [1/2] Building C object CMakeFiles/cmTC_c1713.dir/src.c.o
+[2/2] Linking C executable cmTC_c1713
+
+
+Source file was:
+volatile int i=0; int main() { return 0; }
+Performing C SOURCE FILE Test HAVE_INLINE succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6d18e && [1/2] Building C object CMakeFiles/cmTC_6d18e.dir/src.c.o
+[2/2] Linking C executable cmTC_6d18e
+
+
+Source file was:
+static inline int foo() { return 0; } int main() { return foo(); }
+Performing C SOURCE FILE Test O_LABEL_ADDRESSES succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1c077 && [1/2] Building C object CMakeFiles/cmTC_1c077.dir/src.c.o
+[2/2] Linking C executable cmTC_1c077
+
+
+Source file was:
+int main() { void *p = &&lbl; goto *p; lbl: return 0; }
+Performing C SOURCE FILE Test HAVE_WEAK_ATTRIBUTE succeeded with the following compile output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_da50f && [1/2] Building C object CMakeFiles/cmTC_da50f.dir/src.c.o
+[2/2] Linking C executable cmTC_da50f
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+extern int __attribute__((weak)) foo(); int main() { return &foo == 0 ? 0 : 1; }
+Performing C SOURCE FILE Test HAVE_VISIBILITY_ATTRIBUTE succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_36196 && [1/2] Building C object CMakeFiles/cmTC_36196.dir/src.c.o
+[2/2] Linking C executable cmTC_36196
+
+
+Source file was:
+int foo __attribute__((visibility ("hidden"))) = 1; int main() { return 0; }
+Performing C SOURCE FILE Test HAVE_ALLOCA succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d4bd8 && [1/2] Building C object CMakeFiles/cmTC_d4bd8.dir/src.c.o
+[2/2] Linking C executable cmTC_d4bd8
+
+
+Source file was:
+#include <alloca.h>
+int main() { char *s = alloca(10); return s!=0; }
+Performing C SOURCE FILE Test HAVE_SIGNBIT succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b0c71 && [1/2] Building C object CMakeFiles/cmTC_b0c71.dir/src.c.o
+[2/2] Linking C executable cmTC_b0c71
+
+
+Source file was:
+#include <math.h>
+int main() { double x = 0.0; return signbit(x); }
+Determining if signal handler return type is void passed with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_bacf0 && [1/2] Building C object CMakeFiles/cmTC_bacf0.dir/TestSignalType.c.o
+[2/2] Linking C executable cmTC_bacf0
+
+
+
+Determining sysconf() support for _SC_NPROCESSORS_CONF succeeded:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0d0dc && [1/2] Building C object CMakeFiles/cmTC_0d0dc.dir/TestSCNProcessors.c.o
+[2/2] Linking C executable cmTC_0d0dc
+
+
+
+Performing C SOURCE FILE Test TIME_WITH_SYS_TIME succeeded with the following output:
+Change Dir: /workspaces/uno_player/swipl-9.3.24/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2671d && [1/2] Building C object CMakeFiles/cmTC_2671d.dir/src.c.o
+[2/2] Linking C executable cmTC_2671d
+
+
+Source file was:
+#include <sys/time.h>
+     #include <time.h>
+     int main() { return 0; }
