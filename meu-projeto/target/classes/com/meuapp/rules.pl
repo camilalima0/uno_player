@@ -3,9 +3,9 @@ sameColor(C, C).
 sameSimbol(S, S).
 
 %if Card1 and Card2 are Common CardS, they Can be played if they have the Same Color or the Same Simbol
-canPlayCC(Color1, Simbol1, Color2, Simbol2) :-
+canPlayCC(Color1, Symbol1, Color2, Symbol2) :-
     sameColor(Color1, Color2);
-    sameSimbol(Simbol1, Simbol2).
+    sameSimbol(Symbol1, Symbol2).
 
 %if Card1 iS a wild Card and Card2 iS a wild Card, Card2 Can be played anyway.
 canPlayWW() :-
@@ -16,9 +16,21 @@ canPlayWC(ChosenColor, Color2) :-
     sameColor(ChosenColor, Color2).
 
 %if Card1 iS a Common Card and Card2 iS a wild Card, Card2 Can be played if Card1 iSn't skip or drawTwo.
-canPlayCW(Simbol1) :-
-    Simbol1 \= skip,
-    Simbol1 \= drawTwo.
+canPlayCW(Symbol1) :-
+    Symbol1 \= skip,
+    Symbol1 \= drawTwo.
+
+drawTwo(Symbol1) :-
+    Symbol1 == drawTwo.
+
+drawFour(Symbol1) :-
+    Symbol1 == drawFour.
+
+skip(Symbol1) :-
+    Symbol1 == skip.
 
 
+isWildCard(Symbol1) :-
+    Symbol1 == wild;
+    Simbol1 == wildDrawFour.
 
