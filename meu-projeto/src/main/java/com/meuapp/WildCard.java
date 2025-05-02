@@ -1,21 +1,22 @@
 package com.meuapp;
 
 public class WildCard extends Card{
-    private Simbol simbol;
+    private Symbol symbol;
 
-    public WildCard(String name, Simbol simbol) {
+    public WildCard(String name, Symbol symbol) {
         super(name);
-        this.simbol = simbol;
+        this.symbol = symbol;
     }
 
-    public Simbol getSimbol() {
-        return simbol;
+    @Override
+    public Symbol getSymbol() {
+        return symbol;
     }
 
     @Override
     public String toString() {
         return "WildCard{" +
-                "simbol=" + simbol +
+                "symbol=" + symbol +
                 '}';
     }
 }

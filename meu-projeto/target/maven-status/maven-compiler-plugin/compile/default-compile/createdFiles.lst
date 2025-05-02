@@ -1,0 +1,12 @@
+com\meuapp\App.class
+com\meuapp\UnoLogic.class
+com\meuapp\Computer.class
+com\meuapp\Game.class
+com\meuapp\Player.class
+com\meuapp\Simbol.class
+com\meuapp\User.class
+com\meuapp\WildCard.class
+com\meuapp\CommonCard.class
+com\meuapp\Deck.class
+com\meuapp\Color.class
+com\meuapp\Card.class
